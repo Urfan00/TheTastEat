@@ -21,9 +21,12 @@ body {
 
 .container {
     width: 90%;
+    margin: 0 auto;
 }
 
-.header {
+
+.header,
+.content {
     background-color: #292E36;
     min-height: 250px;
 }
@@ -32,11 +35,12 @@ body {
     height: 200px;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 30px;
+    padding: 20px 75px;
 }
 
 .header .top-menu p,
-.header .top-menu button {
+.header .top-menu button,
+.content .container .left div button {
     box-sizing: border-box;
     text-align: center;
     width: 295px;
@@ -44,6 +48,16 @@ body {
     font-size: 22px;
     padding: 15px 5px;
     border: 1px solid #E1B168;
+    transition: 0.3s;
+}
+
+.header .top-menu button:hover,
+.header .top-menu button:hover a,
+.header .top-menu button a:hover,
+.header .navbar .nav ul li:hover a {
+    transition: 0.3s;
+    background-color: transparent;
+    color: #E1B168;
 }
 
 .header .top-menu button {
@@ -56,9 +70,12 @@ body {
 }
 
 .header .navbar {
+    position: sticky;
+    top: 0;
     border-top: 1px solid gray;
+    border-bottom: 2px dashed gray;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 75px;
 }
 
 .header .navbar .nav {
@@ -75,9 +92,72 @@ body {
     font-size: 20px;
 }
 
+.header .navbar .nav ul li a,
+.content .container .left div button,
+.content .container .left div button a {
+    transition: 0.3s;
+}
 
-.header .navbar .social {
-    font-size: 20px;
+.social {
+    font-size: 24px;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
+}
+
+.social div a .fa-instagram:hover,
+.social div a .fa-facebook:hover,
+.social div a .fa-twitter:hover {
+    color: #E1B168;
+}
+
+.content .container .left {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .container .left div {
+    width: 100%;
+    min-height: 10px;
+}
+
+.content .container .left div h1 {
+    font-size: 100px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.content .container .left div p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.content .container img {
+    width: 655px;
+    height: 769.66px;
+    padding: 25px;
+}
+
+.content .container .left div button {
+    width: 230px;
+    background-color: transparent;
+    margin-top: 10px
+}
+
+.content .container .left div button a {
+    color: #E1B168;
+    background-color: transparent;
+}
+
+.content .container .left div button:hover {
+    background-color: #E1B168;
+}
+
+.content .container .left div button:hover,
+.content .container .left div button:hover a,
+.content .container .left div button a:hover {
+    transition: 0.3s;
+    color: #292E36;
 }
