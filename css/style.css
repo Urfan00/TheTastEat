@@ -19,6 +19,10 @@ body {
     text-decoration: none;
 }
 
+.fw-400 {
+    font-weight: 400;
+}
+
 .container {
     width: 90%;
     margin: 0 auto;
@@ -60,7 +64,8 @@ body {
     color: #E1B168;
 }
 
-.header .top-menu button {
+.header .top-menu button,
+.content .container .left div button:hover {
     background-color: #E1B168;
 }
 
@@ -128,16 +133,19 @@ body {
     margin: 0;
 }
 
-.content .container .left div p {
+.content .container .left div p,
+.service .container .bottom-service p {
     font-size: 20px;
     font-weight: 400;
+    margin: 0;
+    padding: 15px 0;
 }
 
 
 .content .container img {
     width: 655px;
     height: 769.66px;
-    padding: 25px;
+    padding-top: 55px;
 }
 
 .content .container .left div button {
@@ -151,13 +159,66 @@ body {
     background-color: transparent;
 }
 
-.content .container .left div button:hover {
-    background-color: #E1B168;
-}
-
 .content .container .left div button:hover,
 .content .container .left div button:hover a,
 .content .container .left div button a:hover {
     transition: 0.3s;
     color: #292E36;
 }
+
+.service {
+    background-color: #FFF8F5;
+    min-height: 500px;
+}
+
+.service .container .top-service {
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.service .container .top-service .d-flex {
+    width: 440px;
+}
+
+.service .container .top-service .d-flex div h1,
+.service .container .top-service .d-flex div p {
+    font-size: 30px;
+    /* font-weight: 400; */
+    margin: 0;
+}
+
+.service .container .top-service .d-flex div p {
+    font-size: 20px;
+}
+
+.service .container .top-service .d-flex img {
+    object-fit: contain;
+}
+
+.service .container .top-service .d-flex,
+.service .bottom-service .center {
+    align-items: center;
+    gap: 20px;
+}
+
+.service .bottom-service {
+    padding-bottom: 100px;
+}
+
+.service .bottom-service>img {
+    width: 743px;
+    height: 519px;
+}
+
+.service .bottom-service .right {
+    padding: 5px 50px;
+}
+
+.service .bottom-service .right .up h1,
+.service .bottom-service .right .center h1 {
+    font-size: 40px;
+    margin: 0;
+    padding: 15px 0;
+}
+
