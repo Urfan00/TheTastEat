@@ -44,7 +44,8 @@ body {
 
 .header .top-menu p,
 .header .top-menu button,
-.content .container .left div button {
+.content .container .left div button,
+.menu-section .container .d-flex .left-menu div div button {
     box-sizing: border-box;
     text-align: center;
     width: 295px;
@@ -65,7 +66,8 @@ body {
 }
 
 .header .top-menu button,
-.content .container .left div button:hover {
+.content .container .left div button:hover,
+.menu-section .container .d-flex .left-menu div div button:hover {
     background-color: #E1B168;
 }
 
@@ -92,14 +94,17 @@ body {
     justify-content: space-between;
 }
 
-.header .navbar .nav ul li {
+.header .navbar .nav ul li,
+.menu-section .container .fw-400 {
     list-style-type: none;
     font-size: 20px;
 }
 
 .header .navbar .nav ul li a,
 .content .container .left div button,
-.content .container .left div button a {
+.content .container .left div button a,
+.menu-section .container .d-flex .left-menu div div button,
+.menu-section .container .d-flex .left-menu div div button a {
     transition: 0.3s;
 }
 
@@ -148,20 +153,25 @@ body {
     padding-top: 55px;
 }
 
-.content .container .left div button {
+.content .container .left div button,
+.menu-section .container .d-flex .left-menu div div button {
     width: 230px;
     background-color: transparent;
     margin-top: 10px
 }
 
-.content .container .left div button a {
+.content .container .left div button a,
+.menu-section .container .d-flex .left-menu div div button a {
     color: #E1B168;
     background-color: transparent;
 }
 
 .content .container .left div button:hover,
 .content .container .left div button:hover a,
-.content .container .left div button a:hover {
+.content .container .left div button a:hover,
+.menu-section .container .d-flex .left-menu div div button:hover,
+.menu-section .container .d-flex .left-menu div div button:hover a,
+.menu-section .container .d-flex .left-menu div div button a:hover {
     transition: 0.3s;
     color: #292E36;
 }
@@ -171,7 +181,8 @@ body {
     min-height: 500px;
 }
 
-.service .container .top-service {
+.service .container .top-service,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list {
     justify-content: space-between;
     align-items: center;
     padding: 100px 0;
@@ -182,22 +193,31 @@ body {
 }
 
 .service .container .top-service .d-flex div h1,
-.service .container .top-service .d-flex div p {
+.service .container .top-service .d-flex div p,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item h1,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
     font-size: 30px;
-    /* font-weight: 400; */
     margin: 0;
 }
 
-.service .container .top-service .d-flex div p {
+.service .container .top-service .d-flex div p,
+.menu-section .container .d-flex .left-menu div p {
     font-size: 20px;
+    margin: 0;
 }
 
-.service .container .top-service .d-flex img {
+.menu-section .container .d-flex .left-menu div p {
+    padding-bottom: 35px;
+}
+
+.service .container .top-service .d-flex img,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex>img {
     object-fit: contain;
 }
 
 .service .container .top-service .d-flex,
-.service .bottom-service .center {
+.service .bottom-service .center,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex {
     align-items: center;
     gap: 20px;
 }
@@ -216,9 +236,77 @@ body {
 }
 
 .service .bottom-service .right .up h1,
-.service .bottom-service .right .center h1 {
+.service .bottom-service .right .center h1,
+.menu-section .container .d-flex .left-menu div h1 {
     font-size: 40px;
     margin: 0;
     padding: 15px 0;
 }
 
+.menu-section {
+    padding: 100px 0;
+}
+
+.menu-section .container .d-flex .right-menu {
+    width: 60%;
+    padding-left: 50px;
+}
+
+.menu-section .container .d-flex .left-menu {
+    width: 40%;
+}
+
+.menu-section .container .d-flex .left-menu div div button {
+    margin: 50px 0;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-list .list {
+    padding: 15px 0;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-title,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .price,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item h1,
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 30px;
+    color: #292E36;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
+    font-size: 20px;
+    color: #555555;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-title {
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+.menu-section .container .d-flex .right-menu .menu {
+    padding-bottom: 50px;
+}
+
+.menu-section .container .section-title {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+}
+
+.menu-section .container .section-title::after,
+.menu-section .container .section-title::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #E1B168;
+}
+
+.menu-section .container .section-title::before {
+    top: 0;
+}
+
+.menu-section .container .section-title::after {
+    bottom: 0;
+}
