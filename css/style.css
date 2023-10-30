@@ -30,7 +30,8 @@ body {
 
 
 .header,
-.content {
+.content,
+.testimonial {
     background-color: #292E36;
     min-height: 250px;
 }
@@ -67,7 +68,8 @@ body {
 
 .header .top-menu button,
 .content .container .left div button:hover,
-.menu-section .container .d-flex .left-menu div div button:hover {
+.menu-section .container .d-flex .left-menu div div button:hover,
+.testimonial .container .testimonial-cards .t-card .t-head .testimonial-img .img-icon {
     background-color: #E1B168;
 }
 
@@ -116,7 +118,8 @@ body {
 
 .social div a .fa-instagram:hover,
 .social div a .fa-facebook:hover,
-.social div a .fa-twitter:hover {
+.social div a .fa-twitter:hover,
+.testimonial .container .testimonial-cards .t-card .t-head .author p {
     color: #E1B168;
 }
 
@@ -139,7 +142,8 @@ body {
 }
 
 .content .container .left div p,
-.service .container .bottom-service p {
+.service .container .bottom-service p,
+.testimonial .container .t-text {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
@@ -195,13 +199,16 @@ body {
 .service .container .top-service .d-flex div h1,
 .service .container .top-service .d-flex div p,
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item h1,
-.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p,
+.testimonial .container .testimonial-cards .t-card .t-head .author h2 {
     font-size: 30px;
     margin: 0;
+    padding: 0;
 }
 
 .service .container .top-service .d-flex div p,
-.menu-section .container .d-flex .left-menu div p {
+.menu-section .container .d-flex .left-menu div p,
+.testimonial .container .testimonial-cards .t-card .t-head .author p {
     font-size: 20px;
     margin: 0;
 }
@@ -215,6 +222,8 @@ body {
     object-fit: contain;
 }
 
+
+.testimonial .container .testimonial-cards .t-card .t-head,
 .service .container .top-service .d-flex,
 .service .bottom-service .center,
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex {
@@ -237,13 +246,15 @@ body {
 
 .service .bottom-service .right .up h1,
 .service .bottom-service .right .center h1,
-.menu-section .container .d-flex .left-menu div h1 {
+.menu-section .container .d-flex .left-menu div h1,
+.testimonial .container h2 {
     font-size: 40px;
     margin: 0;
     padding: 15px 0;
 }
 
-.menu-section {
+.menu-section,
+.testimonial {
     padding: 100px 0;
 }
 
@@ -277,6 +288,10 @@ body {
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
     font-size: 20px;
     color: #555555;
+    display: inline-block;
+    padding-right: 10px;
+    box-sizing: border-box;
+    background: white;
 }
 
 .menu-section .container .d-flex .right-menu .menu .menu-title {
@@ -288,14 +303,17 @@ body {
     padding-bottom: 50px;
 }
 
-.menu-section .container .section-title {
+.menu-section .container .section-title,
+.testimonial .container .section-title {
     display: inline-block;
     position: relative;
     padding: 5px 0;
 }
 
 .menu-section .container .section-title::after,
-.menu-section .container .section-title::before {
+.menu-section .container .section-title::before,
+.testimonial .container .section-title::after,
+.testimonial .container .section-title::before {
     content: "";
     position: absolute;
     left: 0;
@@ -303,10 +321,70 @@ body {
     border-bottom: 1px solid #E1B168;
 }
 
-.menu-section .container .section-title::before {
+.menu-section .container .section-title::before,
+.testimonial .container .section-title::before {
     top: 0;
 }
 
-.menu-section .container .section-title::after {
+.menu-section .container .section-title::after,
+.testimonial .container .section-title::after {
     bottom: 0;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex {
+    width: 100%;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item {
+    width: 100%;
+    position: relative;
+}
+
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #AAAAAA;
+    box-sizing: border-box;
+    bottom: 5px;
+    width: 100%;
+    z-index: -1;
+}
+
+.testimonial .container .testimonial-cards {
+    gap: 35px;
+}
+
+.testimonial .container .testimonial-cards .t-card {
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 544px;
+    height: 322px;
+    background-color: #343942;
+}
+
+.testimonial .container .testimonial-cards .t-card .t-head .testimonial-img {
+    position: relative;
+}
+
+.testimonial .container .testimonial-cards .t-card .t-head .testimonial-img .img-icon {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #292E36;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial .container .testimonial-cards .t-card .t-head {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #797E89;
+}
+
+.testimonial .container .testimonial-cards .t-card .testimonial-text p {
+    font-size: 24px;
 }
