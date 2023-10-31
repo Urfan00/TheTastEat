@@ -4,7 +4,7 @@ body {
 }
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .text-color {
@@ -87,7 +87,8 @@ body {
     padding: 0 75px;
 }
 
-.header .navbar .nav {
+.header .navbar .nav,
+.offers .container .offer-head p {
     width: 50%;
 }
 
@@ -124,10 +125,19 @@ body {
 }
 
 .content .container .left {
+    flex-direction: column;
+
+}
+
+.content .container .left,
+.offers .container .offer-cards .offer-card,
+.offers .container .offer-cards .offer-card .left,
+.offers .container .offer-cards .offer-card .right {
     width: 50%;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .content .container .left div {
@@ -208,7 +218,9 @@ body {
 
 .service .container .top-service .d-flex div p,
 .menu-section .container .d-flex .left-menu div p,
-.testimonial .container .testimonial-cards .t-card .t-head .author p {
+.testimonial .container .testimonial-cards .t-card .t-head .author p,
+.offers .container .offer-head p,
+.offers .container .offer-cards .offer-card .left > p{
     font-size: 20px;
     margin: 0;
 }
@@ -247,14 +259,17 @@ body {
 .service .bottom-service .right .up h1,
 .service .bottom-service .right .center h1,
 .menu-section .container .d-flex .left-menu div h1,
-.testimonial .container h2 {
+.testimonial .container h2,
+.offers .container .offer-head h1,
+.offers .container .offer-cards .offer-card .left h2 {
     font-size: 40px;
     margin: 0;
     padding: 15px 0;
 }
 
 .menu-section,
-.testimonial {
+.testimonial,
+.offers {
     padding: 100px 0;
 }
 
@@ -304,7 +319,8 @@ body {
 }
 
 .menu-section .container .section-title,
-.testimonial .container .section-title {
+.testimonial .container .section-title,
+.offers .container .offer-head h2 {
     display: inline-block;
     position: relative;
     padding: 5px 0;
@@ -313,7 +329,9 @@ body {
 .menu-section .container .section-title::after,
 .menu-section .container .section-title::before,
 .testimonial .container .section-title::after,
-.testimonial .container .section-title::before {
+.testimonial .container .section-title::before,
+.offers .container .offer-head h2::after,
+.offers .container .offer-head h2::before {
     content: "";
     position: absolute;
     left: 0;
@@ -322,12 +340,14 @@ body {
 }
 
 .menu-section .container .section-title::before,
-.testimonial .container .section-title::before {
+.testimonial .container .section-title::before,
+.offers .container .offer-head h2::before {
     top: 0;
 }
 
 .menu-section .container .section-title::after,
-.testimonial .container .section-title::after {
+.testimonial .container .section-title::after,
+.offers .container .offer-head h2::after {
     bottom: 0;
 }
 
@@ -363,7 +383,8 @@ body {
     background-color: #343942;
 }
 
-.testimonial .container .testimonial-cards .t-card .t-head .testimonial-img {
+.testimonial .container .testimonial-cards .t-card .t-head .testimonial-img,
+.offers .container .offer-cards .offer-card .left .offer-img {
     position: relative;
 }
 
@@ -387,4 +408,52 @@ body {
 
 .testimonial .container .testimonial-cards .t-card .testimonial-text p {
     font-size: 24px;
+}
+
+.offers .container .offer-head {
+    text-align: center;
+}
+
+.offers .container .offer-cards .offer-card .left .offer-img p {
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    left: 45px
+}
+
+.offers .container .offer-head h2,
+.offers .container .offer-cards .offer-card .left .offer-img p span,
+.offers .container .offer-cards .offer-card .left h3 {
+    font-size: 20px;
+    color: #292E36;
+}
+
+.offers .container .offer-head p {
+    margin: 0 auto;
+}
+
+.offers .container .offer-cards {
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.offers .container .offer-cards .offer-card {
+    width: 665px;
+    height: 409px;
+}
+
+.offers .container .offer-cards .offer-card .left h3 {
+    border-top: 2px solid #292E36;
+    border-bottom: 2px solid #292E36;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.offers .container .offer-cards .offer-card .left h2 {
+    color: #292E36;
 }
