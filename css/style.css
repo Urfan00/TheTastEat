@@ -53,6 +53,7 @@ body {
 
 .header .top-menu p,
 .header .top-menu button,
+.blog .container .blog-cards .b-card .b-img button,
 .content .container .left div button,
 .menu-section .container .d-flex .left-menu div div button,
 .popular-menu .container .p-btn button {
@@ -69,13 +70,17 @@ body {
 .header .top-menu button:hover,
 .header .top-menu button:hover a,
 .header .top-menu button a:hover,
-.header .navbar .nav ul li:hover a {
+.header .navbar .nav ul li:hover a,
+.blog .container .blog-cards .b-card .b-img button:hover,
+.blog .container .blog-cards .b-card .b-img button:hover a,
+.blog .container .blog-cards .b-card .b-img button a:hover {
     transition: 0.3s;
     background-color: transparent;
     color: #E1B168;
 }
 
 .header .top-menu button,
+.blog .container .blog-cards .b-card .b-img button,
 .content .container .left div button:hover,
 .popular-menu .container .p-btn button:hover,
 .menu-section .container .d-flex .left-menu div div button:hover,
@@ -99,7 +104,8 @@ body {
 
 .header .navbar .nav,
 .offers .container .offer-head p,
-.popular-menu .container .p-menu-head p {
+.popular-menu .container .p-menu-head p,
+.blog .container .blog-head p {
     width: 50%;
 }
 
@@ -169,7 +175,8 @@ body {
 .service .container .bottom-service p,
 .testimonial .container .t-text,
 .popular-menu .container .popular-cards .p-card>p,
-.we-offer .container .d-flex .o-left p {
+.we-offer .container .d-flex .o-left p,
+.blog .container .blog-cards .b-card .b-text p {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
@@ -243,6 +250,7 @@ body {
 .testimonial .container .testimonial-cards .t-card .t-head .author p,
 .offers .container .offer-head p,
 .popular-menu .container .p-menu-head p,
+.blog .container .blog-head p,
 .offers .container .offer-cards .offer-card .left>p {
     font-size: 20px;
     margin: 0;
@@ -257,7 +265,7 @@ body {
     object-fit: contain;
 }
 
-
+.blog .container .blog-cards .b-card .b-header,
 .testimonial .container .testimonial-cards .t-card .t-head,
 .service .container .top-service .d-flex,
 .service .bottom-service .center,
@@ -276,7 +284,9 @@ body {
     height: 519px;
 }
 
-.service .bottom-service .right {
+.service .bottom-service .right,
+.blog .container .blog-cards .b-card .b-header,
+.blog .container .blog-cards .b-card .b-text {
     padding: 5px 50px;
 }
 
@@ -286,6 +296,7 @@ body {
 .testimonial .container h2,
 .offers .container .offer-head h1,
 .popular-menu .container .p-menu-head h1,
+.blog .container .blog-head h1,
 .offers .container .offer-cards .offer-card .left h2,
 .we-offer .container .d-flex .o-left h2 {
     font-size: 40px;
@@ -295,7 +306,8 @@ body {
 
 .menu-section,
 .testimonial,
-.offers {
+.offers,
+.blog {
     padding: 100px 0;
 }
 
@@ -322,7 +334,8 @@ body {
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item h1,
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p,
 .popular-menu .container .popular-cards .p-card div h1,
-.popular-menu .container .popular-cards .p-card div p {
+.popular-menu .container .popular-cards .p-card div p,
+.blog .container .blog-cards .b-card .b-text h2 {
     margin: 0;
     font-weight: 400;
     font-size: 30px;
@@ -351,6 +364,8 @@ body {
 .testimonial .container .section-title,
 .offers .container .offer-head h2,
 .popular-menu .container .p-menu-head h2,
+.blog .container .blog-head h2,
+.blog .container .blog-cards .b-card .b-header h4,
 .we-offer .container .d-flex .o-left h3 {
     display: inline-block;
     position: relative;
@@ -366,7 +381,11 @@ body {
 .popular-menu .container .p-menu-head h2::after,
 .popular-menu .container .p-menu-head h2::before,
 .we-offer .container .d-flex .o-left h3::after,
-.we-offer .container .d-flex .o-left h3::before {
+.we-offer .container .d-flex .o-left h3::before,
+.blog .container .blog-head h2::after,
+.blog .container .blog-head h2::before,
+.blog .container .blog-cards .b-card .b-header h4::after,
+.blog .container .blog-cards .b-card .b-header h4::before {
     content: "";
     position: absolute;
     left: 0;
@@ -378,6 +397,8 @@ body {
 .testimonial .container .section-title::before,
 .offers .container .offer-head h2::before,
 .popular-menu .container .p-menu-head h2::before,
+.blog .container .blog-head h2::before,
+.blog .container .blog-cards .b-card .b-header h4::before,
 .we-offer .container .d-flex .o-left h3::before {
     top: 0;
 }
@@ -386,7 +407,9 @@ body {
 .testimonial .container .section-title::after,
 .offers .container .offer-head h2::after,
 .popular-menu .container .p-menu-head h2::after,
-.we-offer .container .d-flex .o-left h3::after {
+.we-offer .container .d-flex .o-left h3::after,
+.blog .container .blog-head h2::after,
+.blog .container .blog-cards .b-card .b-header h4::after {
     bottom: 0;
 }
 
@@ -423,7 +446,8 @@ body {
 }
 
 .testimonial .container .testimonial-cards .t-card .t-head .testimonial-img,
-.offers .container .offer-cards .offer-card .left .offer-img {
+.offers .container .offer-cards .offer-card .left .offer-img,
+.blog .container .blog-cards .b-card .b-img {
     position: relative;
 }
 
@@ -451,7 +475,8 @@ body {
 
 .offers .container .offer-head,
 .popular-menu .container .p-menu-head,
-.popular-menu .container .p-btn {
+.popular-menu .container .p-btn,
+.blog .container .blog-head {
     text-align: center;
 }
 
@@ -471,13 +496,16 @@ body {
 .popular-menu .container .p-menu-head h2,
 .we-offer .container .d-flex .o-left h3,
 .offers .container .offer-cards .offer-card .left .offer-img p span,
-.offers .container .offer-cards .offer-card .left h3 {
+.offers .container .offer-cards .offer-card .left h3,
+.blog .container .blog-head h2,
+.blog .container .blog-cards .b-card .b-header h4 {
     font-size: 20px;
     color: #292E36;
 }
 
 .offers .container .offer-head p,
-.popular-menu .container .p-menu-head p {
+.popular-menu .container .p-menu-head p,
+.blog .container .blog-head p {
     margin: 0 auto;
 }
 
@@ -499,7 +527,8 @@ body {
     padding: 5px;
 }
 
-.offers .container .offer-cards .offer-card .left h2 {
+.offers .container .offer-cards .offer-card .left h2,
+.blog .container .blog-cards .b-card .b-img button a {
     color: #292E36;
 }
 
@@ -529,4 +558,27 @@ body {
 
 .we-offer .container .d-flex .o-left {
     width: 30%;
+}
+
+.blog .container .blog-cards .b-card .b-img{
+    height: 384px;
+}
+
+.blog .container .blog-cards .b-card {
+    width: 640px;
+    min-height: 384px;
+    padding: 50px 0;
+}
+
+.blog .container .blog-cards .b-card .b-img button {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 227px;
+}
+
+.blog .container .blog-cards .b-card .b-down{
+    border-bottom: 1px solid #C4C4C4;
+    border-left: 1px solid #C4C4C4;
+    border-right: 1px solid #C4C4C4;
 }
