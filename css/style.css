@@ -28,6 +28,9 @@ body {
     margin: 0 auto;
 }
 
+.justify-content-between {
+    justify-content: space-between;
+}
 
 .header,
 .content,
@@ -46,7 +49,8 @@ body {
 .header .top-menu p,
 .header .top-menu button,
 .content .container .left div button,
-.menu-section .container .d-flex .left-menu div div button {
+.menu-section .container .d-flex .left-menu div div button,
+.popular-menu .container .p-btn button {
     box-sizing: border-box;
     text-align: center;
     width: 295px;
@@ -68,6 +72,7 @@ body {
 
 .header .top-menu button,
 .content .container .left div button:hover,
+.popular-menu .container .p-btn button:hover,
 .menu-section .container .d-flex .left-menu div div button:hover,
 .testimonial .container .testimonial-cards .t-card .t-head .testimonial-img .img-icon {
     background-color: #E1B168;
@@ -88,7 +93,8 @@ body {
 }
 
 .header .navbar .nav,
-.offers .container .offer-head p {
+.offers .container .offer-head p,
+.popular-menu .container .p-menu-head p {
     width: 50%;
 }
 
@@ -106,6 +112,8 @@ body {
 .header .navbar .nav ul li a,
 .content .container .left div button,
 .content .container .left div button a,
+.popular-menu .container .p-btn button,
+.popular-menu .container .p-btn button a,
 .menu-section .container .d-flex .left-menu div div button,
 .menu-section .container .d-flex .left-menu div div button a {
     transition: 0.3s;
@@ -153,7 +161,8 @@ body {
 
 .content .container .left div p,
 .service .container .bottom-service p,
-.testimonial .container .t-text {
+.testimonial .container .t-text,
+.popular-menu .container .popular-cards .p-card>p {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
@@ -168,6 +177,7 @@ body {
 }
 
 .content .container .left div button,
+.popular-menu .container .p-btn button,
 .menu-section .container .d-flex .left-menu div div button {
     width: 230px;
     background-color: transparent;
@@ -175,6 +185,7 @@ body {
 }
 
 .content .container .left div button a,
+.popular-menu .container .p-btn button a,
 .menu-section .container .d-flex .left-menu div div button a {
     color: #E1B168;
     background-color: transparent;
@@ -183,6 +194,9 @@ body {
 .content .container .left div button:hover,
 .content .container .left div button:hover a,
 .content .container .left div button a:hover,
+.popular-menu .container .p-btn button:hover,
+.popular-menu .container .p-btn button:hover a,
+.popular-menu .container .p-btn button a:hover,
 .menu-section .container .d-flex .left-menu div div button:hover,
 .menu-section .container .d-flex .left-menu div div button:hover a,
 .menu-section .container .d-flex .left-menu div div button a:hover {
@@ -220,7 +234,8 @@ body {
 .menu-section .container .d-flex .left-menu div p,
 .testimonial .container .testimonial-cards .t-card .t-head .author p,
 .offers .container .offer-head p,
-.offers .container .offer-cards .offer-card .left > p{
+.popular-menu .container .p-menu-head p,
+.offers .container .offer-cards .offer-card .left>p {
     font-size: 20px;
     margin: 0;
 }
@@ -243,7 +258,8 @@ body {
     gap: 20px;
 }
 
-.service .bottom-service {
+.service .bottom-service,
+.popular-menu .container .p-btn {
     padding-bottom: 100px;
 }
 
@@ -261,6 +277,7 @@ body {
 .menu-section .container .d-flex .left-menu div h1,
 .testimonial .container h2,
 .offers .container .offer-head h1,
+.popular-menu .container .p-menu-head h1,
 .offers .container .offer-cards .offer-card .left h2 {
     font-size: 40px;
     margin: 0;
@@ -286,14 +303,17 @@ body {
     margin: 50px 0;
 }
 
-.menu-section .container .d-flex .right-menu .menu .menu-list .list {
+.menu-section .container .d-flex .right-menu .menu .menu-list .list,
+.popular-menu .container .popular-cards .p-card div {
     padding: 15px 0;
 }
 
 .menu-section .container .d-flex .right-menu .menu .menu-title,
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .price,
 .menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item h1,
-.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p {
+.menu-section .container .d-flex .right-menu .menu .menu-list .list .d-flex .list-item p,
+.popular-menu .container .popular-cards .p-card div h1,
+.popular-menu .container .popular-cards .p-card div p {
     margin: 0;
     font-weight: 400;
     font-size: 30px;
@@ -320,7 +340,8 @@ body {
 
 .menu-section .container .section-title,
 .testimonial .container .section-title,
-.offers .container .offer-head h2 {
+.offers .container .offer-head h2,
+.popular-menu .container .p-menu-head h2 {
     display: inline-block;
     position: relative;
     padding: 5px 0;
@@ -331,7 +352,9 @@ body {
 .testimonial .container .section-title::after,
 .testimonial .container .section-title::before,
 .offers .container .offer-head h2::after,
-.offers .container .offer-head h2::before {
+.offers .container .offer-head h2::before,
+.popular-menu .container .p-menu-head h2::after,
+.popular-menu .container .p-menu-head h2::before {
     content: "";
     position: absolute;
     left: 0;
@@ -341,13 +364,15 @@ body {
 
 .menu-section .container .section-title::before,
 .testimonial .container .section-title::before,
-.offers .container .offer-head h2::before {
+.offers .container .offer-head h2::before,
+.popular-menu .container .p-menu-head h2::before {
     top: 0;
 }
 
 .menu-section .container .section-title::after,
 .testimonial .container .section-title::after,
-.offers .container .offer-head h2::after {
+.offers .container .offer-head h2::after,
+.popular-menu .container .p-menu-head h2::after {
     bottom: 0;
 }
 
@@ -410,7 +435,9 @@ body {
     font-size: 24px;
 }
 
-.offers .container .offer-head {
+.offers .container .offer-head,
+.popular-menu .container .p-menu-head,
+.popular-menu .container .p-btn {
     text-align: center;
 }
 
@@ -427,17 +454,20 @@ body {
 }
 
 .offers .container .offer-head h2,
+.popular-menu .container .p-menu-head h2,
 .offers .container .offer-cards .offer-card .left .offer-img p span,
 .offers .container .offer-cards .offer-card .left h3 {
     font-size: 20px;
     color: #292E36;
 }
 
-.offers .container .offer-head p {
+.offers .container .offer-head p,
+.popular-menu .container .p-menu-head p {
     margin: 0 auto;
 }
 
-.offers .container .offer-cards {
+.offers .container .offer-cards,
+.popular-menu .container .popular-cards {
     justify-content: space-between;
     padding: 50px 0;
 }
@@ -456,4 +486,13 @@ body {
 
 .offers .container .offer-cards .offer-card .left h2 {
     color: #292E36;
+}
+
+.popular-menu .container .popular-cards .p-card {
+    width: 317.5px;
+    height: 449.63px;
+}
+
+.popular-menu .container .popular-cards .p-card div {
+    border-bottom: 1px solid #DCDCDC;
 }
