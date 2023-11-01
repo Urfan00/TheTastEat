@@ -32,9 +32,14 @@ body {
     justify-content: space-between;
 }
 
+.justify-content-evenly {
+    justify-content: space-evenly;
+}
+
 .header,
 .content,
-.testimonial {
+.testimonial,
+.we-offer {
     background-color: #292E36;
     min-height: 250px;
 }
@@ -132,7 +137,8 @@ body {
     color: #E1B168;
 }
 
-.content .container .left {
+.content .container .left,
+.we-offer .container .d-flex .o-right .s-cards .s-card {
     flex-direction: column;
 
 }
@@ -162,7 +168,8 @@ body {
 .content .container .left div p,
 .service .container .bottom-service p,
 .testimonial .container .t-text,
-.popular-menu .container .popular-cards .p-card>p {
+.popular-menu .container .popular-cards .p-card>p,
+.we-offer .container .d-flex .o-left p {
     font-size: 20px;
     font-weight: 400;
     margin: 0;
@@ -210,7 +217,8 @@ body {
 }
 
 .service .container .top-service,
-.menu-section .container .d-flex .right-menu .menu .menu-list .list {
+.menu-section .container .d-flex .right-menu .menu .menu-list .list,
+.we-offer .container {
     justify-content: space-between;
     align-items: center;
     padding: 100px 0;
@@ -278,7 +286,8 @@ body {
 .testimonial .container h2,
 .offers .container .offer-head h1,
 .popular-menu .container .p-menu-head h1,
-.offers .container .offer-cards .offer-card .left h2 {
+.offers .container .offer-cards .offer-card .left h2,
+.we-offer .container .d-flex .o-left h2 {
     font-size: 40px;
     margin: 0;
     padding: 15px 0;
@@ -341,7 +350,8 @@ body {
 .menu-section .container .section-title,
 .testimonial .container .section-title,
 .offers .container .offer-head h2,
-.popular-menu .container .p-menu-head h2 {
+.popular-menu .container .p-menu-head h2,
+.we-offer .container .d-flex .o-left h3 {
     display: inline-block;
     position: relative;
     padding: 5px 0;
@@ -354,7 +364,9 @@ body {
 .offers .container .offer-head h2::after,
 .offers .container .offer-head h2::before,
 .popular-menu .container .p-menu-head h2::after,
-.popular-menu .container .p-menu-head h2::before {
+.popular-menu .container .p-menu-head h2::before,
+.we-offer .container .d-flex .o-left h3::after,
+.we-offer .container .d-flex .o-left h3::before {
     content: "";
     position: absolute;
     left: 0;
@@ -365,14 +377,16 @@ body {
 .menu-section .container .section-title::before,
 .testimonial .container .section-title::before,
 .offers .container .offer-head h2::before,
-.popular-menu .container .p-menu-head h2::before {
+.popular-menu .container .p-menu-head h2::before,
+.we-offer .container .d-flex .o-left h3::before {
     top: 0;
 }
 
 .menu-section .container .section-title::after,
 .testimonial .container .section-title::after,
 .offers .container .offer-head h2::after,
-.popular-menu .container .p-menu-head h2::after {
+.popular-menu .container .p-menu-head h2::after,
+.we-offer .container .d-flex .o-left h3::after {
     bottom: 0;
 }
 
@@ -455,6 +469,7 @@ body {
 
 .offers .container .offer-head h2,
 .popular-menu .container .p-menu-head h2,
+.we-offer .container .d-flex .o-left h3,
 .offers .container .offer-cards .offer-card .left .offer-img p span,
 .offers .container .offer-cards .offer-card .left h3 {
     font-size: 20px;
@@ -495,4 +510,23 @@ body {
 
 .popular-menu .container .popular-cards .p-card div {
     border-bottom: 1px solid #DCDCDC;
+}
+
+.we-offer .container .d-flex .o-right .s-cards .s-card {
+    width: 254px;
+    height: 235px;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #323841;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.we-offer .container .d-flex .o-right {
+    width: 70%;
+    padding-left: 100px;
+}
+
+.we-offer .container .d-flex .o-left {
+    width: 30%;
 }
