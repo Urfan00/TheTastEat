@@ -636,3 +636,12 @@ body {
     height: 50px;
     width: 40%;
 }
+
+.footer {
+    background-color: #292E36;
+}
+
+.footer .container {
+    justify-content: center;
+    align-items: center;
+}
